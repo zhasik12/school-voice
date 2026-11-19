@@ -1,49 +1,138 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!doctype html>
+<html lang="ru">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.2">
-  <style type="text/css">
-    body {background-color: #f1f4fa}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px '.SF NS'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p4 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #d4dff5; -webkit-text-stroke: #d4dff5}
-    p.p6 {margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #585e6d; -webkit-text-stroke: #585e6d}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px '.SF NS'; color: #131928; -webkit-text-stroke: #131928}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px '.SF NS'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.0px '.SF NS'; color: #162444; -webkit-text-stroke: #162444}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #778092; -webkit-text-stroke: #778092}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; background-color: #ffffff}
-    span.s3 {font-kerning: none; background-color: #2541fa}
-    span.s4 {font-kerning: none; background-color: #e9edf9}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>School Voice — голос учеников</title>
+<style>
+:root{--navy:#14233b;--blue:#315efb;--bg:#f4f6fb;--muted:#6b7280}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:#182235}
+header{background:linear-gradient(130deg,#14233b,#254b83);color:white;padding:26px 20px 34px}
+.wrap{max-width:900px;margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-weight:850;letter-spacing:.08em}
+.pill{border:1px solid #ffffff55;border-radius:99px;padding:6px 11px;font-size:12px}
+h1{font-size:clamp(32px,6vw,54px);line-height:1.02;margin:34px 0 12px}.lead{color:#dce6f7;max-width:580px;line-height:1.6}
+main{max-width:900px;margin:-15px auto 50px;padding:0 16px}.card{background:white;border-radius:20px;padding:24px;box-shadow:0 12px 35px #172b4d12;margin-bottom:18px}
+h2{margin:0 0 8px;font-size:22px}.muted{color:var(--muted);font-size:14px;line-height:1.5}
+label{display:block;font-weight:650;font-size:14px;margin:18px 0 7px}
+input,textarea{width:100%;border:1px solid #dce1eb;border-radius:12px;padding:13px 14px;font:inherit;background:#fff}
+textarea{min-height:150px;resize:vertical}button{border:0;border-radius:12px;padding:13px 18px;font-weight:750;font-size:15px;cursor:pointer}
+.primary{background:var(--blue);color:white;width:100%;margin-top:16px}.secondary{background:#edf1fa;color:#1d3156}.danger{background:#fff0f0;color:#a12b2b}
+button:disabled{opacity:.5;cursor:not-allowed}.notice{padding:12px 14px;border-radius:12px;background:#eff6ff;color:#1d4c87;font-size:13px;margin-top:15px}
+.success{background:#ecfdf3;color:#17643a}.error{background:#fff1f1;color:#9d2424}
+.hidden{display:none!important}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.admin-head{display:flex;justify-content:space-between;align-items:center;gap:12px}.item{border:1px solid #e6eaf1;border-radius:14px;padding:16px;margin-top:12px}.item p{white-space:pre-wrap;line-height:1.55;margin:9px 0}.meta{font-size:12px;color:var(--muted)}
+.qr{width:180px;height:180px;border:1px solid #e5e7eb;border-radius:12px;padding:8px;background:white}
+footer{text-align:center;color:#8a93a3;font-size:12px;padding:10px 20px 35px}
+@media(max-width:560px){.card{padding:19px}.admin-head{align-items:flex-start;flex-direction:column}}
+</style>
 </head>
 <body>
-<p class="p1"><span class="s1"><b>SCHOOL VOICE</b></span></p>
-<p class="p2"><span class="s1">ШКОЛЬНЫЙ ПАРЛАМЕНТ</span></p>
-<h1 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 48.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1"><b>Твой голос<br>
-важен.</b></span></h1>
-<p class="p4"><span class="s1">Есть идея, как сделать школу лучше? Поделись предложением анонимно. Каждое мнение может стать началом перемен.</span></p>
-<h2 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 22.0px 'Helvetica Neue'; color: #131928; -webkit-text-stroke: #131928"><span class="s2"><b>Поделись своей идеей</b></span></h2>
-<p class="p6"><span class="s2">Не указывай личные данные, если хочешь сохранить анонимность. Сообщение увидит администрация школьного парламента.</span></p>
-<p class="p7"><span class="s2"><b>Тема предложения</b></span></p>
-<p class="p7"><span class="s2"><b>Твоё предложение</b></span></p>
-<p class="p8"><span class="s3"><b>Отправить предложение</b></span></p>
-<h2 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 22.0px 'Helvetica Neue'; color: #131928; -webkit-text-stroke: #131928"><span class="s2"><b>Как это работает?</b></span></h2>
-<p class="p6"><span class="s2">1. Напиши идею. 2. Нажми «Отправить». 3. Парламент рассмотрит предложения и выберет, что можно реализовать.</span></p>
-<h2 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 22.0px 'Helvetica Neue'; color: #131928; -webkit-text-stroke: #131928"><span class="s2"><b>Панель администрации</b></span></h2>
-<p class="p6"><span class="s2">Вход только для уполномоченного администратора.</span></p>
-<p class="p7"><span class="s2"><b>Электронная почта администратора</b></span></p>
-<p class="p7"><span class="s2"><b>Пароль</b></span></p>
-<p class="p8"><span class="s3"><b>Войти</b></span></p>
-<h2 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 22.0px 'Helvetica Neue'; color: #131928; -webkit-text-stroke: #131928"><span class="s2"><b>QR-код School Voice</b></span></h2>
-<p class="p6"><span class="s2">После публикации сайта этот QR-код будет вести прямо на форму предложений.</span></p>
-<p class="p6"><span class="s2">QR-код формируется по адресу этой страницы. Для школьного использования сначала опубликуй сайт.</span></p>
-<p class="p9"><span class="s4"><b>Скачать QR-код</b></span></p>
-<p class="p10"><span class="s1">School Voice · Школьный парламент</span></p>
-</body>
-</html>
+<header><div class="wrap">
+ <div class="top"><div class="brand">SCHOOL VOICE</div><span class="pill">ШКОЛЬНЫЙ ПАРЛАМЕНТ</span></div>
+ <h1>Твой голос<br>важен.</h1>
+ <p class="lead">Есть идея, как сделать школу лучше? Поделись предложением анонимно. Каждое мнение может стать началом перемен.</p>
+</div></header>
+<main>
+<section class="card" id="sendCard">
+ <h2>Поделись своей идеей</h2>
+ <p class="muted">Не указывай личные данные, если хочешь сохранить анонимность. Сообщение увидит администрация школьного парламента.</p>
+ <form id="ideaForm">
+  <label for="topic">Тема предложения</label>
+  <input id="topic" maxlength="100" placeholder="Например: школьные мероприятия" required>
+  <label for="message">Твоё предложение</label>
+  <textarea id="message" maxlength="3000" placeholder="Расскажи подробнее..." required></textarea>
+  <button class="primary" id="sendBtn" type="submit">Отправить предложение</button>
+ </form>
+ <div id="formStatus" class="notice hidden" role="status"></div>
+</section>
+
+<section class="card">
+ <h2>Как это работает?</h2>
+ <p class="muted">1. Напиши идею. 2. Нажми «Отправить». 3. Парламент рассмотрит предложения и выберет, что можно реализовать.</p>
+</section>
+
+<section class="card" id="adminLogin">
+ <h2>Панель администрации</h2>
+ <p class="muted">Вход только для уполномоченного администратора.</p>
+ <form id="loginForm">
+  <label for="email">Электронная почта администратора</label><input id="email" type="email" autocomplete="username" required>
+  <label for="password">Пароль</label><input id="password" type="password" autocomplete="current-password" required>
+  <button class="primary" type="submit">Войти</button>
+ </form><div id="loginStatus" class="notice hidden"></div>
+</section>
+
+<section class="card hidden" id="adminPanel">
+ <div class="admin-head"><div><h2>Предложения учеников</h2><p class="muted" id="countText">Загрузка...</p></div><div class="row"><button class="secondary" id="refreshBtn">Обновить</button><button class="secondary" id="logoutBtn">Выйти</button></div></div>
+ <div id="ideasList"></div>
+</section>
+
+<section class="card" id="qrCard">
+ <h2>QR-код School Voice</h2>
+ <p class="muted">После публикации сайта этот QR-код будет вести прямо на форму предложений.</p>
+ <div class="row" style="margin-top:14px"><img class="qr" id="qrImage" alt="QR-код сайта"><div style="flex:1;min-width:180px"><p class="muted" id="qrHint">QR-код формируется по адресу этой страницы. Для школьного использования сначала опубликуй сайт.</p><button class="secondary" id="downloadQr">Скачать QR-код</button></div></div>
+</section>
+</main>
+<footer>School Voice · Школьный парламент</footer>
+
+<script type="module">
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+
+// 1) Вставь URL и anon key проекта Supabase вместо значений ниже.
+ const SUPABASE_URL ='https://ogrqldodlywqlsvllmva.supabase.co';
+const SUPABASE_ANON_KEY ='sb_publishable_TInR6NTWhHyOZCmOjIy5UQ_f358g6eE';
+const configured = !SUPABASE_URL.startsWith('YOUR_') && !SUPABASE_ANON_KEY.startsWith('YOUR_');
+const supabase = configured ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
+
+const $ = id => document.getElementById(id);
+const show = (el, msg, type='') => { el.textContent=msg; el.className='notice '+type; };
+const hide = el => el.classList.add('hidden');
+
+const qrUrl = 'https://api.qrserver.com/v1/create-qr-code/?size=360x360&data='+encodeURIComponent(location.href.split('#')[0]);
+$('qrImage').src = qrUrl;
+$('downloadQr').addEventListener('click', () => window.open(qrUrl, '_blank', 'noopener'));
+
+$('ideaForm').addEventListener('submit', async e => {
+ e.preventDefault();
+ const status=$('formStatus');
+ if(!configured){show(status,'Сайт пока не подключён к базе данных. Сначала выполни настройку из файла README.','error');return;}
+ const topic=$('topic').value.trim(), message=$('message').value.trim();
+ if(!topic || !message){show(status,'Заполни оба поля.','error');return;}
+ $('sendBtn').disabled=true;
+ const {error}=await supabase.from('suggestions').insert({topic,message});
+ $('sendBtn').disabled=false;
+ if(error){show(status,'Не удалось отправить. Попробуй ещё раз позже.','error');return;}
+ $('ideaForm').reset();show(status,'Спасибо! Твоё предложение отправлено анонимно.','success');
+});
+
+$('loginForm').addEventListener('submit', async e=>{
+ e.preventDefault();const status=$('loginStatus');
+ if(!configured){show(status,'Сначала подключи базу данных по инструкции README.','error');return;}
+ const {error}=await supabase.auth.signInWithPassword({email:$('email').value,password:$('password').value});
+ if(error){show(status,'Ошибка: '+error.message,'error');return;}
+ hide(status);$('adminLogin').classList.add('hidden');$('adminPanel').classList.remove('hidden');await loadIdeas();
+});
+async function loadIdeas(){
+ const list=$('ideasList');list.textContent='Загрузка...';
+ const {data,error}=await supabase.from('suggestions').select('id,topic,message,created_at').order('created_at',{ascending:false});
+ if(error){list.textContent='Не удалось загрузить предложения.';return;}
+ $('countText').textContent=`Всего предложений: ${data.length}`;
+ list.innerHTML='';
+ if(!data.length){list.textContent='Пока предложений нет.';return;}
+ for(const idea of data){
+  const item=document.createElement('article');item.className='item';
+  const title=document.createElement('strong');title.textContent=idea.topic;
+  const meta=document.createElement('div');meta.className='meta';meta.textContent=new Date(idea.created_at).toLocaleString('ru-RU');
+  const body=document.createElement('p');body.textContent=idea.message;
+  const del=document.createElement('button');del.className='danger';del.textContent='Удалить';
+  del.addEventListener('click',async()=>{
+   if(!confirm('Удалить это предложение?'))return;
+   const {error}=await supabase.from('suggestions').delete().eq('id',idea.id);
+   if(error){alert('Не удалось удалить предложение.');return;}loadIdeas();
+  });
+  item.append(title,meta,body,del);list.append(item);
+ }
+}
+$('refreshBtn').addEventListener('click',loadIdeas);
+$('logoutBtn').addEventListener('click',async()=>{await supabase.auth.signOut();$('adminPanel').classList.add('hidden');$('adminLogin').classList.remove('hidden');});
+if(!configured){$('qrHint').textContent='Сначала опубликуй сайт и подключи Supabase. Затем QR-код будет вести на опубликованную страницу.';}
+</script>
+</body></html>
